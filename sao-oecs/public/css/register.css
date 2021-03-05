@@ -1,0 +1,37 @@
+[x-cloak] {
+    display: none;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #333;
+}
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
+
+.toggle-path {
+    transition: background 0.3s ease-in-out;
+}
+
+.toggle-circle {
+    top: 0.2rem;
+    left: 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked~.toggle-circle {
+    transform: translateX(100%);
+}
+
+input:checked~.toggle-path {
+    background-color: #81E6D9;
+}
